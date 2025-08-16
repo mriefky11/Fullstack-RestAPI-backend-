@@ -33,17 +33,14 @@ Proyek ini adalah RESTful API menggunakan Laravel 12 untuk mengelola Posts dan C
 
 # API Documentation
 
-1. **Posts**
-| Method | Endpoint          | Body / Params                                      | Description                                                |
-| ------ | ----------------- | -------------------------------------------------- | ---------------------------------------------------------- |
-| GET    | `/api/posts`      | -                                                  | List semua posts dengan jumlah komentar (`comments_count`) |
-| GET    | `/api/posts/{id}` | `id` (URL param)                                   | Detail post beserta daftar komentar                        |
-| POST   | `/api/posts`      | JSON: `{ "title": "string", "content": "string" }` | Buat post baru                                             |
-| PUT    | `/api/posts/{id}` | JSON: `{ "title": "string", "content": "string" }` | Update post                                                |
-| DELETE | `/api/posts/{id}` | `id` (URL param)                                   | Hapus post                                                 |
+🔹 Posts
+GET /api/posts → Ambil semua post.
+GET /api/posts/{id} → Ambil detail post berdasarkan ID.
+POST /api/posts → Tambah post baru.
+PUT /api/posts/{id} → Update post berdasarkan ID.
+DELETE /api/posts/{id} → Hapus post berdasarkan ID.
 
-2. **Comments**
-| Method | Endpoint                   | Body / Params                                       | Description            |
-| ------ | -------------------------- | --------------------------------------------------- | ---------------------- |
-| POST   | `/api/posts/{id}/comments` | JSON: `{ "author": "string", "message": "string" }` | Tambah comment ke post |
-| DELETE | `/api/comments/{id}`       | `id` (URL param)                                    | Hapus comment          |
+🔹 Comments
+
+POST /api/posts/{id}/comments → Tambah komentar baru.
+DELETE /api/comments/{id} → Hapus komentar berdasarkan ID.
