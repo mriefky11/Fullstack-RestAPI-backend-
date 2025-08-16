@@ -32,7 +32,8 @@ Proyek ini adalah RESTful API menggunakan Laravel 12 untuk mengelola Posts dan C
 - php artisan serve
 
 # API Documentation
-1. Posts
+
+1. **Posts**
 | Method | Endpoint          | Body / Params                                      | Description                                                |
 | ------ | ----------------- | -------------------------------------------------- | ---------------------------------------------------------- |
 | GET    | `/api/posts`      | -                                                  | List semua posts dengan jumlah komentar (`comments_count`) |
@@ -41,7 +42,7 @@ Proyek ini adalah RESTful API menggunakan Laravel 12 untuk mengelola Posts dan C
 | PUT    | `/api/posts/{id}` | JSON: `{ "title": "string", "content": "string" }` | Update post                                                |
 | DELETE | `/api/posts/{id}` | `id` (URL param)                                   | Hapus post                                                 |
 
-2. Comments
+2. **Comments**
 | Method | Endpoint                   | Body / Params                                       | Description            |
 | ------ | -------------------------- | --------------------------------------------------- | ---------------------- |
 | POST   | `/api/posts/{id}/comments` | JSON: `{ "author": "string", "message": "string" }` | Tambah comment ke post |
