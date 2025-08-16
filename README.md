@@ -33,14 +33,13 @@ Proyek ini adalah RESTful API menggunakan Laravel 12 untuk mengelola Posts dan C
 
 # API Documentation
 
-🔹 Posts
-GET /api/posts → Ambil semua post.
-GET /api/posts/{id} → Ambil detail post berdasarkan ID.
-POST /api/posts → Tambah post baru.
-PUT /api/posts/{id} → Update post berdasarkan ID.
-DELETE /api/posts/{id} → Hapus post berdasarkan ID.
+1. **Posts**
+- GET /api/posts → Ambil semua post.
+- GET /api/posts/{id} → Ambil detail post berdasarkan ID.
+- POST /api/posts → Tambah post baru.
+- PUT /api/posts/{id} → Update post berdasarkan ID.
+- DELETE /api/posts/{id} → Hapus post berdasarkan ID.
 
-🔹 Comments
-
-POST /api/posts/{id}/comments → Tambah komentar baru.
-DELETE /api/comments/{id} → Hapus komentar berdasarkan ID.
+2. **Comments**
+- POST /api/posts/{id}/comments → Tambah komentar baru.
+- DELETE /api/comments/{id} → Hapus komentar berdasarkan ID.
